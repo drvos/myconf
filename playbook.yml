@@ -15,6 +15,7 @@
         - git
         - subversion
         - zsh
+        - vim
       when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
       register: installation
 
@@ -25,6 +26,7 @@
         - git
         - subversion
         - htop
+        - vim
       when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
       register: installation
 
